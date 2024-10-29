@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        p{
+            display: auto;
+            width: 50%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <p>利用料の計算</p>
+    <table>
+        <tr>
+            <th>NO.</th>
+            <th>料金(a)</th>
+            <th>人数(b)</th>
+            <th>axb</th>
+        </tr>
+        <tr>
+            <td>o</td>
+            <td>500</td>
+            <td>10</td>
+            <td>利用料の合計</td>
+    
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>980</td>
+            <td>16</td>
+            <td>利用料の合計</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1200</td>
+            <td>8</td>
+            <td>利用料の合計</td>
+        </tr>
+       
+    </table>
+
+    <script>
+        const a = [500, 980, 1200];
+        const b = [10, 16, 8];
+
+        function multiply(i) {
+            const result = a[i] * b[i];
+            document.getElementById(`result${i}`).innerText = result;
+        }
+    </script>
+    
+</body>
+</html>
